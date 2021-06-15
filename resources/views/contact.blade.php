@@ -1,12 +1,23 @@
 @extends('layouts.app')
 @section('content')
 <h1>Contact Us</h1>
+{{-- displaying errors --}}
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 
+{{-- Contact Form --}}
 <form method="POST" action="{{route("contact-form-submit")}}" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control" name="name" aria-describedby="nameHelp" placeholder="Enter name" required>
+        <input type="text" class="form-control" name="name" aria-describedby="nameHelp" placeholder="Enter name" >
     </div>
 
     <div class="form-group">
