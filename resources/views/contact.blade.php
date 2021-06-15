@@ -6,23 +6,23 @@
     @csrf
     <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control" name="name" aria-describedby="nameHelp" placeholder="Enter name">
+        <input type="text" class="form-control" name="name" aria-describedby="nameHelp" placeholder="Enter name" required>
     </div>
 
     <div class="form-group">
         <label for="Subject">Subject</label>
-        <input type="text" class="form-control" name="subject" aria-describedby="subjectHelp" placeholder="Enter Subject">
+        <input type="text" class="form-control" name="subject" aria-describedby="subjectHelp" placeholder="Enter Subject" required>
     </div>
 
     <div class="form-group">
         <label for="message">Message</label>
-        <textarea class="form-control" name="message" rows="3"></textarea>
+        <textarea class="form-control" name="message" rows="3" required></textarea>
     </div>
 
     <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" name="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Enter email">
+        <label for="email1">Email address</label>
+        <input type="email" class="form-control" name="email" aria-describedby="emailHelp"
+            placeholder="Enter email" required>
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
 
