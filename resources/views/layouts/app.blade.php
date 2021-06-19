@@ -35,7 +35,7 @@
             </div>
         </div>
     </div>
-    <footer id='footer' class="text-center fixed-bottom">
+    <footer id='footer' class="text-center ">
         <p>Copyright 2021 &copy; Reham</p>
     </footer>
 
