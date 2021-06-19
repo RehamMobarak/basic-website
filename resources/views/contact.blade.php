@@ -1,16 +1,6 @@
 @extends('layouts.app')
 @section('content')
 <h1>Contact Us</h1>
-{{-- displaying errors --}}
-@if ($errors->any())
-    <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
 
 {{-- Contact Form --}}
 <form method="POST" action="{{route("contact-form-submit")}}" enctype="multipart/form-data">
