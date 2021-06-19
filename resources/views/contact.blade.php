@@ -17,23 +17,23 @@
     @csrf
     <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control" name="name" aria-describedby="nameHelp" placeholder="Enter name" >
+        <input type="text" class="form-control" name="name" aria-describedby="nameHelp" placeholder="Enter name"  required minlength="4">
     </div>
 
     <div class="form-group">
         <label for="Subject">Subject</label>
-        <input type="text" class="form-control" name="subject" aria-describedby="subjectHelp" placeholder="Enter Subject" required>
+        <input type="text" class="form-control" name="subject" aria-describedby="subjectHelp" placeholder="Enter Subject" required minlength="4">
     </div>
 
     <div class="form-group">
         <label for="message">Message</label>
-        <textarea class="form-control" name="message" rows="3" required></textarea>
+        <textarea class="form-control" name="message" rows="3" required minlength="10"></textarea>
     </div>
 
     <div class="form-group">
         <label for="email1">Email address</label>
         <input type="email" class="form-control" name="email" aria-describedby="emailHelp"
-            placeholder="Enter email" required>
+            placeholder="Enter email" required >
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
 
