@@ -29,3 +29,5 @@ Route::get('/contact', function () {
 
 Route::POST('/contact/submit', [ContactController::class, 'submit'])->name('contact-form-submit');
  //dd(request()->post())
+
+ Route::get('/contact/messages', [ContactController::class,'getMessages'])->name('get-messages');
