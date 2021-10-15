@@ -9,6 +9,9 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
+    {{-- add website icon beside title --}}
+    <link rel="icon" href="{{ url('/favicon.ico') }}">
+
     <!-- Custom css -->
     <link rel="stylesheet" href="/css/app.css">
 
